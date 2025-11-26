@@ -1,3 +1,7 @@
+import os
+import numpy as np
+from selenium import webdriver
+from selenium.webdriver.common.by import By
 class LoginPage:
     def __init__(self, page, logger):
         self.page = page
@@ -5,6 +9,9 @@ class LoginPage:
         self.email_text_box = "#username"
         self.password_text_box = "#password"
         self.sign_in_button = "//input[@value='Sign In']"
+
+    def get_sum(self,a,b):
+        return a/b
 
     def login(self, username, password):
         """Login to the application using provided credentials"""
