@@ -2,6 +2,7 @@ from tests.pages.login_page import LoginPage
 
 class LoginActions:
     def __init__(self, context):
+        self.page = None
         self.context = context
         self.login_page = LoginPage(page=self.context.page, logger=self.context.logger)
     
