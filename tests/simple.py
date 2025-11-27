@@ -1,25 +1,36 @@
 """
 Simple test module with sample code for testing purposes.
 """
+from typing import Union
+
+Number = Union[int, float]
 
 
-def add(a, b):
+def add(a: Number, b: Number) -> Number:
     """Add two numbers and return the result."""
+    if not isinstance(a, (int, float)) or not isinstance(b, (int, float)):
+        raise TypeError(f"Expected numeric types, got {type(a).__name__} and {type(b).__name__}")
     return a + b
 
 
-def subtract(a, b):
+def subtract(a: Number, b: Number) -> Number:
     """Subtract b from a and return the result."""
+    if not isinstance(a, (int, float)) or not isinstance(b, (int, float)):
+        raise TypeError(f"Expected numeric types, got {type(a).__name__} and {type(b).__name__}")
     return a - b
 
 
-def multiply(a, b):
+def multiply(a: Number, b: Number) -> Number:
     """Multiply two numbers and return the result."""
+    if not isinstance(a, (int, float)) or not isinstance(b, (int, float)):
+        raise TypeError(f"Expected numeric types, got {type(a).__name__} and {type(b).__name__}")
     return a * b
 
 
-def divide(a, b):
+def divide(a: Number, b: Number) -> float:
     """Divide a by b and return the result."""
+    if not isinstance(a, (int, float)) or not isinstance(b, (int, float)):
+        raise TypeError(f"Expected numeric types, got {type(a).__name__} and {type(b).__name__}")
     if b == 0:
         raise ValueError("Cannot divide by zero")
     return a / b
