@@ -32,6 +32,7 @@ class LoginPage:
             self.logger.info("Attempting to fill username field")
             self.page.locator(self.email_text_box).click()
             self.page.locator(self.email_text_box).fill(username)
+            self.logger.debug(f"Username field filled with: {username}")
             self.page.locator(self.password_text_box).click()
             self.page.locator(self.password_text_box).fill(password)
             self.logger.debug("Password field filled")
