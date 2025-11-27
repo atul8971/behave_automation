@@ -1,5 +1,4 @@
 from tests.pages.login_page import LoginPage
-import os
 class LoginActions:
     def __init__(self, context):
         self.context = context
