@@ -25,3 +25,16 @@ class LoginPage:
         except Exception as e:
             self.logger.error(f"Error during login page interaction: {str(e)}")
             raise
+
+    def register(self, username, password):
+        """Login to the application using provided credentials"""
+        try:
+            self.logger.info("Attempting to fill username field")
+            self.logger.debug("Password field filled")
+
+            self.logger.info("Clicking sign in button")
+            self.page.locator(self.sign_in_button).click()
+            self.logger.info("Sign in button clicked successfully")
+        except Exception as e:
+            self.logger.error(f"Error during login page interaction: {str(e)}")
+            raise
