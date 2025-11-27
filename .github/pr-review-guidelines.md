@@ -4,10 +4,10 @@
 
 All PR reviews must follow this structured format:
 
-### 1. Greptile Overview
+### 1. Claude PR Overview
 Start with a high-level header.
 
-### 2. Greptile Summary
+### 2. Claude PR Summary
 Provide a brief 1-2 sentence summary of what changed in the PR.
 
 Then list the key issues found:
