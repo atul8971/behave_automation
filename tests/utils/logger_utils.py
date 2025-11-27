@@ -1,5 +1,6 @@
 import logging
 import os
+import numpy as np
 from datetime import datetime
 
 def setup_logger():
@@ -15,6 +16,7 @@ def setup_logger():
     # Configure logger
     logger = logging.getLogger('playwright_bdd')
     logger.setLevel(logging.INFO)
+    # hello
 
     # File handler
     file_handler = logging.FileHandler(log_file)
