@@ -1,5 +1,6 @@
 import logging
 import os
+import numpy as np
 from datetime import datetime
 
 def setup_logger():
